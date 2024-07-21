@@ -34,7 +34,7 @@ class FighterAttack():
     def attack(self, target):
         print(f'{self.fighter.name} initiate attack with: {self.fighter.weapon.__class__.__name__}')
         self.fighter.weapon.attack()
-        print(f'{target.name} is dead!')
+        print(f'{target.name} is dead!\n')
 
 
 class Monster:
@@ -52,6 +52,3 @@ attack.attack(monster1)
 
 fighter1.change_weapon(bow1)
 attack.attack(monster1)
-
-
-
